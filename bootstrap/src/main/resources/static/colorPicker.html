@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    <meta charset="UTF-8">
+    <title >default title</title>
+    <link  href="/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link  href="/css/bootstrap.colorpickersliders.min.css" type="text/css" rel="stylesheet"/>
+    <script  src="/js/jquery.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.colorpickersliders.min.js" type="text/javascript"></script>
+    <script src="/js/tinycolor.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="hsvflat"></div>
+
+
+    </div>
+</div>
+</body>
+
+<script>
+    $("#hsvflat").ColorPickerSliders({
+        color: "rgb(36, 170, 242)",
+        flat: true,
+        sliders: false,
+        swatches: false,
+        hsvpanel: true
+    });
+</script>
+</html>

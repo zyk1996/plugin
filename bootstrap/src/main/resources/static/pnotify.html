@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    <meta charset="UTF-8">
+    <title >default title</title>
+    <link  href="/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link  href="/css/pnotify.css" type="text/css" rel="stylesheet"/>
+    <link  href="/css/pnotify.brighttheme.css" type="text/css" rel="stylesheet"/>
+    <link  href="/css/pnotify.buttons.css" type="text/css" rel="stylesheet"/>
+    <script  src="/js/jquery.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/pnotify.js" type="text/javascript"></script>
+    <script src="/js/pnotify.animate.js" type="text/javascript"></script>
+    <script src="/js/pnotify.buttons.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+<div style="height: 300px"></div>
+        <button class="btn btn-success" id="notify">弹窗</button>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        $("#notify").click(function () {
+            new PNotify({
+                title: 'Regular Success',
+                text: 'That thing that you were trying to do worked!',
+                type: 'success',
+                styling: "brighttheme",
+                animate_speed: "normal",
+                delay: 8000
+            });
+        });
+
+
+    });
+</script>
+</html>

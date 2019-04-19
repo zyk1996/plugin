@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    <meta charset="UTF-8">
+    <title >default title</title>
+    <link  href="/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <script  src="/js/jquery.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap-contextmenu.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="context" data-toggle="context" data-target="#context-menu" style="height:300px;width:650px;border:1px solid #ddd">
+        </div>
+        <div id="context-menu">
+            <ul class="dropdown-menu" role="menu">
+                <li id="btn"><a tabindex="-1">Action</a></li>
+                <li><a tabindex="-1">Another action</a></li>
+                <li><a tabindex="-1">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            alert("hello");
+        });
+    });
+</script>
+</html>
+
+
